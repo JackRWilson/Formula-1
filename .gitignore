@@ -1,13 +1,26 @@
+# Python
 __pycache__/
+.venv/
+
+# Local secrets
+.env
+/docs/dev/
+
+# Logs and run state
+docs/logs.txt
+docs/reminders.txt
+docs/attribute_list.txt
+docs/attribute_list.xlsx
+src/f1/pipeline/.last_run.json
+
+# Local caches
 cache/
 fastf1/
-logs.txt
-reminders.txt
-attribute_list.txt
-attribute_list.xlsx
+catboost_info/
+
+# Generated datasets and model outputs
 /data/raw_backup
 notebooks/testing.ipynb
-src/pipeline/.last_run.json
-catboost_info/
-src/modeling/model_pre_qual.cbm
-src/modeling/model_pre_race.cbm
+src/f1/predictions/model_pre_qual.cbm
+src/f1/predictions/model_pre_race.cbm
+artifacts/
